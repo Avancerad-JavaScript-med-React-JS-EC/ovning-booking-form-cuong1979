@@ -1,13 +1,21 @@
-import React from 'react';
-import TurRetur from './TurRetur';
+import React, {Component} from 'react';
 
-function App(){
-    return(
-        <div className='wrapper'>
-            <h1>Åka Tåg</h1>
-            <TurRetur />
-        </div>
-    )
+import Destination from './destination';
+import Form from './form'
+import Button from './button'
+
+class App extends Component {
+    render() {
+        return (
+            <section className='booking'>
+                <h1>Åka Tåg</h1>
+                <Destination from='Stockholm' to='Göteborg'/>
+                <Form/>
+                <Button/>
+                
+            </section>
+        )    
+    }
 }
 
 export default App;
