@@ -18,12 +18,16 @@ class App extends Component {
             }
         }
     }
+        GetFullName(name){
+
+        }
+
     render() {
         return (
             <section className="booking">
                 <h1>{this.state.appTitle}</h1>
                 <Destination from={this.state.from} to={this.state.to} />
-                <Form formFromState={this.state.form} />
+                <Form formFromState={this.state.form} getNameFromForm={this.}/>
                 <Button />
             </section>
         )

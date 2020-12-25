@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from './button';
 
 function Form(props) {
     console.log(props.formFromState.titel[0])
@@ -35,7 +36,9 @@ function Form(props) {
             <label className="col-2">
                 Namn
             </label>
-            <input type="text" className="col-2" />
+            <input  type="text" className="col-2" />
+
+
             <label className="col-2">
                 E-post
             </label>
@@ -44,6 +47,8 @@ function Form(props) {
                 <input type="checkbox" />
                 Godkänner villkoren
             </label>
+
+            < Button />
         </form>
     )
 }
