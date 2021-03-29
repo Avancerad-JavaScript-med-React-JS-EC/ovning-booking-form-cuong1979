@@ -27,7 +27,7 @@ class App extends Component {
             <section className="booking">
                 <h1>{this.state.appTitle}</h1>
                 <Destination from={this.state.from} to={this.state.to} />
-                <Form formFromState={this.state.form} getNameFromForm={this.}/>
+                <Form formFromState={this.state.form} getNameFromForm={this}/>
                 <Button />
             </section>
         )
